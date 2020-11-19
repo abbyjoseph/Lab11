@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Nov 19 11:48:42 2020
+# Process ID: 2744
+# Current directory: C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9644 C:\Users\abby_joseph1\Documents\GitHub\Lab11\Lab11_guess\Lab11_guess.xpr
+# Log file: C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess/vivado.log
+# Journal file: C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess/Lab11_guess.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/abby_joseph1/Documents/GitHub/Lab11/systemverilogcode/debounce_test.sv
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+add_files -fileset constrs_1 -norecurse C:/Users/abby_joseph1/Documents/GitHub/Lab11/systemverilogcode/Basys3_lab11.xdc
+close [ open C:/Users/abby_joseph1/Documents/GitHub/Lab11/systemverilogcode/guessing_game.sv w ]
+add_files C:/Users/abby_joseph1/Documents/GitHub/Lab11/systemverilogcode/guessing_game.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

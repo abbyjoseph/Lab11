@@ -1,0 +1,928 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 2744
+License: Customer
+
+Current time: 	Thu Nov 19 11:49:43 CST 2020
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/XilinxVitis/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/XilinxVitis/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Abby_Joseph1
+User home directory: C:/Users/abby_joseph1
+User working directory: C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/XilinxVitis/Vivado
+HDI_APPROOT: C:/XilinxVitis/Vivado/2020.1
+RDI_DATADIR: C:/XilinxVitis/Vivado/2020.1/data
+RDI_BINDIR: C:/XilinxVitis/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/abby_joseph1/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/abby_joseph1/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/abby_joseph1/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/XilinxVitis/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess/vivado.log
+Vivado journal file location: 	C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess/vivado.jou
+Engine tmp dir: 	C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess/.Xil/Vivado-2744-ROG-305-02
+
+Xilinx Environment Variables
+----------------------------
+VSSDK140Install: C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\
+XILINX: C:/XilinxVitis/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/XilinxVitis/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/XilinxVitis/Vivado/2020.1
+XILINX_SDK: C:/XilinxVitis/Vitis/2020.1
+XILINX_VITIS: C:/XilinxVitis/Vitis/2020.1
+XILINX_VIVADO: C:/XilinxVitis/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/XilinxVitis/Vivado/2020.1
+
+
+GUI allocated memory:	132 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,090 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 93 MB (+95498kb) [00:00:23]
+// [Engine Memory]: 1,090 MB (+991660kb) [00:00:23]
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\abby_joseph1\Documents\GitHub\Lab11\Lab11_guess\Lab11_guess.xpr. Version: Vivado v2020.1.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess/Lab11_guess.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,090 MB. GUI used memory: 56 MB. Current time: 11/19/20, 11:49:44 AM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess/Lab11_guess.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/aajos/Documents/GitHub/Lab11/Lab11_guess' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 104 MB (+6167kb) [00:00:48]
+// [GUI Memory]: 111 MB (+1860kb) [00:00:48]
+// WARNING: HEventQueue.dispatchEvent() is taking  6790 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/XilinxVitis/Vivado/2020.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1112.102 ; gain = 0.000 
+// Project name: Lab11_guess; location: C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz (cs)
+// a (cs): Critical Messages: addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, guess_FSM (guess_FSM.sv)]", 2, false); // B (F, cs)
+// [GUI Memory]: 129 MB (+12623kb) [00:00:59]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, guess_FSM (guess_FSM.sv)]", 2, false, false, false, false, false, true); // B (F, cs) - Double Click
+// [GUI Memory]: 136 MB (+1096kb) [00:00:59]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce (debounce.sv)]", 1, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce (debounce.sv)]", 1, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 51 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+// Elapsed time: 175 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 10 seconds
+setFileChooser("C:/Users/abby_joseph1/Documents/GitHub/Lab11/systemverilogcode/debounce_test.sv");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 18 seconds
+dismissDialog("Add Sources"); // c (cs)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 -norecurse C:/Users/abby_joseph1/Documents/GitHub/Lab11/systemverilogcode/debounce_test.sv 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (E, c)
+setFileChooser("C:/Users/abby_joseph1/Documents/GitHub/Lab11/systemverilogcode/Basys3_lab11.xdc");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c (cs)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse C:/Users/abby_joseph1/Documents/GitHub/Lab11/systemverilogcode/Basys3_lab11.xdc 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_lab11.xdc]", 5, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_lab11.xdc]", 5, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("Basys3_lab11.xdc", 0, 111); // bP (w, cs)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // E (g, cs)
+selectCodeEditor("Basys3_lab11.xdc", 1, 43); // bP (w, cs)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // E (g, cs)
+selectCodeEditor("Basys3_lab11.xdc", 434, 548); // bP (w, cs)
+selectCodeEditor("Basys3_lab11.xdc", 0, 24); // bP (w, cs)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // E (g, cs)
+selectCodeEditor("Basys3_lab11.xdc", 2, 63); // bP (w, cs)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // E (g, cs)
+selectCodeEditor("Basys3_lab11.xdc", 1, 362); // bP (w, cs)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // E (g, cs)
+// Elapsed time: 71 seconds
+selectCodeEditor("Basys3_lab11.xdc", 100, 280); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectCodeEditor("guess_FSM.sv", 61, 517); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 27, 517); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 188, 490); // bP (w, cs)
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_lab11.xdc", 3); // m (l, cs)
+selectCodeEditor("Basys3_lab11.xdc", 440, 453); // bP (w, cs)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+// Elapsed time: 93 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+// Elapsed time: 264 seconds
+selectCodeEditor("guess_FSM.sv", 27, 519); // bP (w, cs)
+// Elapsed time: 159 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+// Elapsed time: 109 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+// Elapsed time: 62 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+// [GUI Memory]: 147 MB (+3761kb) [00:20:12]
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+// Elapsed time: 23 seconds
+selectCodeEditor("guess_FSM.sv", 119, 571); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 125, 591); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 98, 602); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("guess_FSM.sv", 42, 600); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 60, 620); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectCodeEditor("guess_FSM.sv", 0, 465); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 17, 486); // bP (w, cs)
+typeControlKey(null, null, 'z');
+selectCodeEditor("guess_FSM.sv", 27, 484); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 28, 504); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 27, 515); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 27, 536); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 282, 524); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 19, 452); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 140, 526); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectCodeEditor("guess_FSM.sv", 65, 432); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 46, 436); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("debounce.sv", 16, 77); // bP (w, cs)
+selectCodeEditor("debounce.sv", 101, 235); // bP (w, cs)
+selectCodeEditor("debounce.sv", 92, 236); // bP (w, cs)
+typeControlKey((HResource) null, "debounce.sv", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectCodeEditor("guess_FSM.sv", 9, 573); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 2, 546); // bP (w, cs)
+typeControlKey((HResource) null, "guess_FSM.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 85, 384); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 247, 398); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 60, 400); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 44, 353); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 214, 383); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 293, 371); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 277, 370); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 204, 367); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("guess_FSM.sv", 228, 397); // bP (w, cs)
+// Elapsed time: 78 seconds
+selectCodeEditor("guess_FSM.sv", 156, 311); // bP (w, cs)
+// Elapsed time: 39 seconds
+selectCodeEditor("guess_FSM.sv", 108, 247); // bP (w, cs)
+// Elapsed time: 126 seconds
+selectCodeEditor("guess_FSM.sv", 113, 263); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 114, 284); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 112, 299); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 110, 314); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 140, 317); // bP (w, cs)
+// Elapsed time: 23 seconds
+selectCodeEditor("guess_FSM.sv", 100, 259); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 125, 339); // bP (w, cs)
+// Elapsed time: 50 seconds
+selectCodeEditor("guess_FSM.sv", 144, 312); // bP (w, cs)
+// Elapsed time: 17 seconds
+selectCodeEditor("guess_FSM.sv", 192, 335); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 168, 355); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 4, 372); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectCodeEditor("debounce.sv", 157, 265); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,090 MB. GUI used memory: 79 MB. Current time: 11/19/20, 12:19:45 PM CST
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectCodeEditor("guess_FSM.sv", 81, 496); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 85, 387); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectCodeEditor("guess_FSM.sv", 126, 497); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 122, 484); // bP (w, cs)
+// Elapsed time: 14 seconds
+selectCodeEditor("guess_FSM.sv", 130, 473); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 130, 473, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("guess_FSM.sv", 104, 501); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+// Elapsed time: 37 seconds
+selectCodeEditor("guess_FSM.sv", 123, 384); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("guess_FSM.sv", 128, 523); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectCodeEditor("guess_FSM.sv", 86, 456); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 21, 533); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 86, 452); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 36, 551); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 30, 537); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectCodeEditor("debounce.sv", 309, 549); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("debounce.sv", 4, 241); // bP (w, cs)
+selectCodeEditor("debounce.sv", 269, 359); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+// Elapsed time: 13 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 12 seconds
+selectCodeEditor("guess_FSM.sv", 10, 448); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectCodeEditor("guess_FSM.sv", 36, 505); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 26, 470); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 107, 574); // bP (w, cs)
+// Elapsed time: 111 seconds
+selectCodeEditor("guess_FSM.sv", 98, 505); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 279, 501); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("guess_FSM.sv", 92, 480); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 92, 480, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("guess_FSM.sv", 302, 531); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectCodeEditor("guess_FSM.sv", 89, 484); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 255, 535); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectCodeEditor("guess_FSM.sv", 254, 510); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 209, 556); // bP (w, cs)
+// Elapsed time: 30 seconds
+selectCodeEditor("guess_FSM.sv", 336, 528); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 321, 573); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 87, 570); // bP (w, cs)
+// Elapsed time: 24 seconds
+selectCodeEditor("guess_FSM.sv", 119, 496); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 118, 489); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 119, 524); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 116, 482); // bP (w, cs)
+typeControlKey((HResource) null, "guess_FSM.sv", 'c'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 96, 520); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 82, 513); // bP (w, cs)
+typeControlKey((HResource) null, "guess_FSM.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 194, 417); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 222, 416); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 232, 463); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 133, 506); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 110, 503); // bP (w, cs)
+// Elapsed time: 17 seconds
+typeControlKey((HResource) null, "guess_FSM.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 230, 394); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 152, 402); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 230, 451); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 193, 454); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 273, 497); // bP (w, cs)
+// Elapsed time: 17 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "guess_FSM.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 229, 417); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 154, 420); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 112, 417); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 228, 464); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("guess_FSM.sv", 178, 520); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 0, 556); // bP (w, cs)
+// Elapsed time: 60 seconds
+selectCodeEditor("guess_FSM.sv", 82, 161); // bP (w, cs)
+typeControlKey((HResource) null, "guess_FSM.sv", 'c'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 217, 183); // bP (w, cs)
+typeControlKey((HResource) null, "guess_FSM.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 140, 211); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 207, 211); // bP (w, cs)
+// Elapsed time: 18 seconds
+selectCodeEditor("guess_FSM.sv", 140, 110); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 150, 111); // bP (w, cs)
+typeControlKey(null, null, 'z');
+selectCodeEditor("guess_FSM.sv", 195, 113); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 213, 112); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 245, 112); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 259, 111); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 164, 160); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 179, 162); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 215, 162); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 228, 163); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 167, 213); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 183, 211); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 218, 212); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 231, 213); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 263, 212); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 276, 213); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 138, 313); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 153, 314); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 189, 314); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 201, 314); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 244, 318); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 259, 318); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 168, 367); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 179, 367); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 216, 364); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 231, 364); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 132, 465); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 148, 465); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 186, 465); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 200, 471); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 242, 465); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 256, 465); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 168, 513); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 177, 516); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 179, 522); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 215, 520); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 231, 518); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 138, 164); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 152, 162); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 195, 161); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 206, 163); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 209, 163); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 251, 162); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 266, 162); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 168, 220); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 180, 216); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 216, 214); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 229, 212); // bP (w, cs)
+// Elapsed time: 16 seconds
+selectCodeEditor("guess_FSM.sv", 140, 367); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 194, 366); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 250, 363); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 309, 367); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 196, 387); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 196, 387, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("guess_FSM.sv", 202, 386); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 202, 386, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("guess_FSM.sv", 212, 383); // bP (w, cs)
+typeControlKey((HResource) null, "guess_FSM.sv", 'c'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 245, 181); // bP (w, cs)
+typeControlKey((HResource) null, "guess_FSM.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 218, 431); // bP (w, cs)
+typeControlKey((HResource) null, "guess_FSM.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 242, 491); // bP (w, cs)
+typeControlKey((HResource) null, "guess_FSM.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 253, 556); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 187, 534); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 133, 496); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 83, 507); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 234, 336); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("guess_FSM.sv", 163, 507); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 149, 506); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 139, 508); // bP (w, cs)
+// Elapsed time: 17 seconds
+selectCodeEditor("guess_FSM.sv", 138, 366); // bP (w, cs)
+typeControlKey((HResource) null, "guess_FSM.sv", 'c'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 148, 517); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 109, 516); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 106, 516); // bP (w, cs)
+typeControlKey((HResource) null, "guess_FSM.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 103, 522); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 415, 513); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 289, 521); // bP (w, cs)
+// Elapsed time: 34 seconds
+selectCodeEditor("guess_FSM.sv", 86, 414); // bP (w, cs)
+typeControlKey((HResource) null, "guess_FSM.sv", 'c'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 103, 556); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 103, 568); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 102, 565); // bP (w, cs)
+typeControlKey((HResource) null, "guess_FSM.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 105, 570); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 241, 589); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 194, 585); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("guess_FSM.sv", 125, 504); // bP (w, cs)
+typeControlKey((HResource) null, "guess_FSM.sv", 'c'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 133, 506); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 114, 508); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 0, 538); // bP (w, cs)
+typeControlKey((HResource) null, "guess_FSM.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 1, 499); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 76, 501); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 76, 501, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("guess_FSM.sv", 197, 534); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 197, 534, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("guess_FSM.sv", 189, 537); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectCodeEditor("guess_FSM.sv", 135, 182); // bP (w, cs)
+// Elapsed time: 17 seconds
+selectCodeEditor("guess_FSM.sv", 134, 363); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 76, 144); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 55, 147); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 105, 145); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 143, 362); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 91, 150); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 91, 388); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 138, 318); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 146, 398); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("guess_FSM.sv", 139, 385); // bP (w, cs)
+// Elapsed time: 18 seconds
+selectCodeEditor("guess_FSM.sv", 135, 363); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 151, 397); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("guess_FSM.sv", 85, 113); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 82, 31); // bP (w, cs)
+// Elapsed time: 33 seconds
+selectCodeEditor("guess_FSM.sv", 28, 528); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 4, 538); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("guess_FSM.sv", 5, 538); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 2, 550); // bP (w, cs)
+// Elapsed time: 59 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectCodeEditor("guess_FSM.sv", 25, 522); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 48, 521); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 82, 533); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 208, 502); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 36, 354); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 72, 216); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 77, 233); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 75, 398); // bP (w, cs)
+// Elapsed time: 12 seconds
+selectCodeEditor("guess_FSM.sv", 215, 413); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 216, 438); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 63 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cs): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm (Q, F)
+// Elapsed time: 24 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "guessing_game"); // ac (Q, F)
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_LOCATION, "Choose Location...", 1); // e (Q, F)
+// WARNING: HEventQueue.dispatchEvent() is taking  1045 ms.
+setFolderChooser("C:/Users/abby_joseph1/Documents/GitHub/Lab11/systemverilogcode");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 41 seconds
+dismissDialog("Add Sources"); // c (cs)
+// Tcl Message: close [ open C:/Users/abby_joseph1/Documents/GitHub/Lab11/systemverilogcode/guessing_game.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/abby_joseph1/Documents/GitHub/Lab11/systemverilogcode/guessing_game.sv 
+// I (cs): Define Module: addNotify
+// Elapsed time: 33 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 0, (String) null, 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "btnU", 0, "Port Name", 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "btnD", 1, "Port Name", 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "btnR", 2, "Port Name", 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "btnL", 3, "Port Name", 0); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 4, (String) null, 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "btnC", 4, "Port Name", 0); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 5, (String) null, 0); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sw", 5, "Port Name", 0); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sw ; input ; false ; 0 ; 0", 5, "false", 2); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sw ; input ; true ; 0 ; 0", 5, "0", 3); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "15", 5, "MSB", 3); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sw ; input ; true ; 15 ; 0", 5, "sw", 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sw", 5, "Port Name", 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clk", 6, "Port Name", 0); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 7, "input", 1); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 7, "Direction", 1); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; output ; false ; 0 ; 0", 7, (String) null, 0); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "seg", 7, "Port Name", 0); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "seg ; output ; false ; 0 ; 0", 7, "false", 2); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "seg ; output ; true ; 0 ; 0", 7, "0", 3); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "7", 7, "MSB", 3); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "seg ; output ; true ; 7 ; 0", 7, "seg", 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "seg", 7, "Port Name", 0); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 8, "input", 1); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 8, "Direction", 1); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; output ; false ; 0 ; 0", 8, "false", 2); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; output ; true ; 0 ; 0", 8, "0", 3); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "3", 8, "MSB", 3); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "seg ; output ; true ; 7 ; 0", 7, "7", 3); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "6", 7, "MSB", 3); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; output ; true ; 3 ; 0", 8, (String) null, 0); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "seg", 7, "Port Name", 0); // ab (J, I)
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "an", 8, "Port Name", 0); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "led", 9, "Port Name", 0); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "led ; input ; false ; 0 ; 0", 9, "input", 1); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 9, "Direction", 1); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "led ; output ; false ; 0 ; 0", 9, "false", 2); // ab (J, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "led ; output ; true ; 0 ; 0", 9, "0", 3); // ab (J, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "15", 9, "MSB", 3); // ab (J, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 182 MB (+29974kb) [00:57:25]
+dismissDialog("Define Module"); // I (cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, guessing_game (guessing_game.sv)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, guessing_game (guessing_game.sv)]", 3, false, false, false, false, false, true); // B (F, cs) - Double Click
+// [GUI Memory]: 192 MB (+392kb) [00:57:31]
+selectCodeEditor("guessing_game.sv", 165, 566); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_lab11.xdc", 3); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guessing_game.sv", 4); // m (l, cs)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+// Elapsed time: 64 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_lab11.xdc", 3); // m (l, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,090 MB. GUI used memory: 125 MB. Current time: 11/19/20, 12:49:45 PM CST
+// Elapsed time: 60 seconds
+selectCodeEditor("Basys3_lab11.xdc", 452, 560); // bP (w, cs)
+selectCodeEditor("Basys3_lab11.xdc", 445, 582); // bP (w, cs)
+selectCodeEditor("Basys3_lab11.xdc", 447, 556); // bP (w, cs)
+selectCodeEditor("Basys3_lab11.xdc", 214, 601); // bP (w, cs)
+selectCodeEditor("Basys3_lab11.xdc", 181, 575); // bP (w, cs)
+selectCodeEditor("Basys3_lab11.xdc", 148, 595); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guessing_game.sv", 3); // m (l, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 167 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+// Elapsed time: 59 seconds
+selectCodeEditor("guess_FSM.sv", 50, 142); // bP (w, cs)
+// Elapsed time: 314 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guessing_game.sv", 3); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guessing_game.sv", 3); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectCodeEditor("debounce.sv", 45, 61); // bP (w, cs)
+typeControlKey((HResource) null, "debounce.sv", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guessing_game.sv", 3); // m (l, cs)
+selectCodeEditor("guessing_game.sv", 48, 569); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 32, 503); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 80, 503); // bP (w, cs)
+// Elapsed time: 207 seconds
+selectCodeEditor("guessing_game.sv", 314, 493); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 23, 519); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 57, 520); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 71, 537); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 30, 560); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 27, 570); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 28, 590); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 89, 593); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 75, 529); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 75, 515); // bP (w, cs)
+// Elapsed time: 11 seconds
+selectCodeEditor("guessing_game.sv", 34, 556); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 44, 550); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 239, 502); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 104, 554); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 49, 577); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 58, 598); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 57, 591); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 69, 540); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'c'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 73, 567); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'v'); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 245, 364); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 244, 478); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 126, 337); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 121, 563); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 93, 457); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 103, 570); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 102, 565); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'c'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 211, 581); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 3, 602); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 238, 505); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 76, 410); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 73, 536); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 79, 550); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 77, 341); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 61, 330); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectCodeEditor("debounce.sv", 241, 121); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guessing_game.sv", 3); // m (l, cs)
+selectCodeEditor("guessing_game.sv", 194, 434); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 164, 510); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 77, 347); // bP (w, cs)
+// Elapsed time: 29 seconds
+selectCodeEditor("guessing_game.sv", 64, 112); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'c'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 54, 210); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 56, 330); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 52, 453); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 55, 453); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 56, 569); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 84, 327); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 83, 577); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 169, 575); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 163, 590); // bP (w, cs)
+// Elapsed time: 156 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guessing_game.sv", 3); // m (l, cs)
+selectCodeEditor("guessing_game.sv", 17, 545); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 24, 539); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 24, 550); // bP (w, cs)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guessing_game.sv", 3); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guessing_game.sv", 3); // m (l, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectCodeEditor("guess_FSM.sv", 48, 229); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+typeControlKey((HResource) null, "guess_FSM.sv", 'c'); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guessing_game.sv", 3); // m (l, cs)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+typeControlKey((HResource) null, "guessing_game.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 82, 452); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("guessing_game.sv", 27, 470); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 29, 487); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 27, 504); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 28, 521); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 32, 543); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 25, 540); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 29, 539, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("guessing_game.sv", 77, 538); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 29, 538); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 27, 554); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 134, 427); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 275, 347); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 104, 415); // bP (w, cs)
+// Elapsed time: 37 seconds
+selectCodeEditor("guessing_game.sv", 11, 410); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 275, 420); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 222, 416); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 212, 416); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 219, 416); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("guessing_game.sv", 298, 543); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 64, 473); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 384, 429); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 362, 416); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 270, 463); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 56, 479); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 58, 505); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 57, 527); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 56, 517); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 337, 421); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("guessing_game.sv", 60, 518); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 64, 543); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 44, 554); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 412, 315); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 46, 556); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 108, 598); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 293, 418); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectCodeEditor("guess_FSM.sv", 182, 346); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 75, 364); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 72, 398); // bP (w, cs)
+// Elapsed time: 17 seconds
+selectCodeEditor("guess_FSM.sv", 120, 398); // bP (w, cs)
+// Elapsed time: 19 seconds
+selectCodeEditor("guess_FSM.sv", 127, 417); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 108, 432); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 5, 470); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 1, 470); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectCodeEditor("guess_FSM.sv", 11, 334); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 6, 333); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("guess_FSM.sv", 20, 223); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 21, 216); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 8, 284); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 1, 278); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 752, 287); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guessing_game.sv", 3); // m (l, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 47 seconds
+selectCodeEditor("guessing_game.sv", 150, 540); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 145, 584); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 8, 592); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+// Elapsed time: 85 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guessing_game.sv", 3); // m (l, cs)
+// Elapsed time: 24 seconds
+selectCodeEditor("guessing_game.sv", 450, 313); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 69, 538); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 146, 568); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,090 MB. GUI used memory: 125 MB. Current time: 11/19/20, 1:19:45 PM CST
+// Elapsed time: 75 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guessing_game.sv", 3); // m (l, cs)
+selectCodeEditor("guessing_game.sv", 436, 194); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 458, 194); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectCodeEditor("guessing_game.sv", 308, 568); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 5, 501); // bP (w, cs)
+// Elapsed time: 34 seconds
+selectCodeEditor("guessing_game.sv", 244, 569); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 138, 573); // bP (w, cs)
+// Elapsed time: 37 seconds
+selectCodeEditor("guessing_game.sv", 143, 34); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'c'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 122, 161); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 110, 292); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 108, 280); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 121, 128); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 104, 403); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 62, 402); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 126, 569); // bP (w, cs)
+// Elapsed time: 20 seconds
+selectCodeEditor("guessing_game.sv", 96, 367); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 113, 384); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 360, 400); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 401, 401); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 147, 569); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("guessing_game.sv", 106, 574); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 118, 571); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 196, 577); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 140, 590); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 7, 583); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 109 seconds
+selectCodeEditor("guessing_game.sv", 124, 442); // bP (w, cs)
+// Elapsed time: 96 seconds
+selectCodeEditor("guessing_game.sv", 98, 245); // bP (w, cs)
+// Elapsed time: 29 seconds
+selectCodeEditor("guessing_game.sv", 282, 336); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 144, 250); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 201, 247); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 258, 248); // bP (w, cs)
+// Elapsed time: 89 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guessing_game.sv", 3); // m (l, cs)
+// Elapsed time: 18 seconds
+selectCodeEditor("guessing_game.sv", 5, 467); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 147, 465); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 148, 490); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 139, 482); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 146, 453); // bP (w, cs)
+typeControlKey((HResource) null, "guessing_game.sv", 'v'); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 20, 505); // bP (w, cs)
+selectCodeEditor("guessing_game.sv", 124, 463); // bP (w, cs)
+// Elapsed time: 17 seconds
+selectCodeEditor("guessing_game.sv", 233, 529); // bP (w, cs)
+// Elapsed time: 103 seconds
+selectCodeEditor("guessing_game.sv", 16, 593); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "debounce.sv", 2); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guess_FSM.sv", 1); // m (l, cs)
+selectCodeEditor("guess_FSM.sv", 22, 357); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 25, 352); // bP (w, cs)
+selectCodeEditor("guess_FSM.sv", 25, 352); // bP (w, cs)
+// Elapsed time: 53 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "guessing_game.sv", 3); // m (l, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

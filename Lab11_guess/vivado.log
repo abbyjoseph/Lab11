@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Nov 19 11:48:42 2020
+# Process ID: 2744
+# Current directory: C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9644 C:\Users\abby_joseph1\Documents\GitHub\Lab11\Lab11_guess\Lab11_guess.xpr
+# Log file: C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess/vivado.log
+# Journal file: C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess/Lab11_guess.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/aajos/Documents/GitHub/Lab11/Lab11_guess' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess/Lab11_guess.srcs/sources_1', nor could it be found using path 'C:/Users/aajos/Documents/GitHub/Lab11/Lab11_guess/Lab11_guess.srcs/sources_1'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/abby_joseph1/Documents/GitHub/Lab11/Lab11_guess/Lab11_guess.ip_user_files', nor could it be found using path 'C:/Users/aajos/Documents/GitHub/Lab11/Lab11_guess/Lab11_guess.ip_user_files'.
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:basys3:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/XilinxVitis/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1112.102 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/abby_joseph1/Documents/GitHub/Lab11/systemverilogcode/debounce_test.sv
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+add_files -fileset constrs_1 -norecurse C:/Users/abby_joseph1/Documents/GitHub/Lab11/systemverilogcode/Basys3_lab11.xdc
+close [ open C:/Users/abby_joseph1/Documents/GitHub/Lab11/systemverilogcode/guessing_game.sv w ]
+add_files C:/Users/abby_joseph1/Documents/GitHub/Lab11/systemverilogcode/guessing_game.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
